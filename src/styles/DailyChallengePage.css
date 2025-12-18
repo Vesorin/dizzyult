@@ -7,7 +7,7 @@
   background-color: transparent;
   min-height: 60vh;
   --daily-border-width: 1px;
-  background-image: url('/dizzyultadv/images/backgroundforest.PNG');
+  background-image: url('/dizzyult/images/backgroundforest.PNG');
   background-size: cover;
   background-position: center;
 }
@@ -17,7 +17,7 @@
   align-items: center;
   gap: 20px;
   padding: 20px var(--sds-size-space-600, 60px);
-  background: url('/dizzyultadv/images/headerforest.png') center/cover no-repeat;
+  background: url('/dizzyult/images/headerforest.png') center/cover no-repeat;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   height: 140px;
 }
@@ -327,7 +327,7 @@
 .daily-header {
   width: 100%;
   height: 150px;
-  background: url('/dizzyultadv/images/headerforest.png') center/cover no-repeat;
+  background: url('/dizzyult/images/headerforest.png') center/cover no-repeat;
   border-bottom: 1px solid #d9d9d9;
   padding: 32px;
   justify-content: flex-start;
@@ -342,7 +342,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('/dizzyultadv/images/headerforest.png') center/cover no-repeat;
+    background: url('/dizzyult/images/headerforest.png') center/cover no-repeat;
     border-bottom: none;
     z-index: 1;
   }
