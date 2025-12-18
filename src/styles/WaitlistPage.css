@@ -1,0 +1,369 @@
+/* Waitlist Page Styles */
+
+.waitlist-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  min-height: 100vh;
+  background-image: url('/dizzyultadv/images/backgroundforest.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header Section */
+.waitlist-header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: none;
+  padding: 0;
+  background: url('/dizzyultadv/images/headerforest.png') center/cover no-repeat;
+}
+
+.waitlist-header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.waitlist-header-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.waitlist-header-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffe3c6;
+  text-shadow: 0 2px 8px #2c1a07, 0 1px 0 #000;
+  letter-spacing: 2px;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+.waitlist-header-subtitle {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.5rem;
+  color: #fffbe8;
+  text-shadow: 0 1px 6px #2c1a07, 0 1px 0 #000;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Navigation Pills */
+.waitlist-nav-pills {
+  display: none;
+}
+
+/* Hero Section */
+.waitlist-hero-section {
+  position: relative;
+  width: 100%;
+  height: 515px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 0 24px;
+  flex-grow: 1;
+}
+
+.waitlist-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.waitlist-text-content {
+position: absolute;
+  top: 20%; /* adjust to fit the brown board vertically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  max-width: 820px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.waitlist-title {
+  font-family: 'Cinzel', serif;
+  font-size: 96px;
+  font-weight: 450;
+  line-height: 1.2;
+  letter-spacing: -2.16px;
+  color: #ffe3c6;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  white-space: pre-wrap;
+  font-variation-settings: "'YEAR' 1979";
+}
+
+.waitlist-subtitle {
+  font-family: "Noto Serif", serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #520303;
+  text-shadow: 0px 4px 10px rgba(255, 250, 213, 0.82);
+  margin: 0;
+  white-space: pre-wrap;
+  font-variation-settings: "'CTGR' 0, 'wdth' 100";
+}
+
+/* Form Section */
+.waitlist-form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: 440px;
+  margin-top: 24px;
+  pointer-events: auto;
+}
+
+.waitlist-input-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.waitlist-input {
+  flex: 1;
+  width: 100%;
+  min-width: 320px;
+  padding: 18px 24px;
+  border: 1.5px solid #d9d9d9;
+  border-radius: 22px;
+  background-color: #fffaea;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  color: #1e1e1e;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,0.13);
+}
+
+.waitlist-input:focus {
+  border-color: #2c2c2c;
+}
+
+.waitlist-input::placeholder {
+  color: #999;
+}
+
+.waitlist-button {
+  padding: 18px 32px;
+  border: 1.5px solid #2c2c2c;
+  border-radius: 22px;
+  background-color: #320101;
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,0.13);
+}
+
+.waitlist-button:hover {
+  background-color: #520303;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.waitlist-button:active {
+  transform: translateY(0);
+}
+
+/* Footer Section */
+/* footer removed */
+
+.waitlist-footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 240px;
+  width: 262px;
+}
+
+.waitlist-footer-logo {
+  height: 35px;
+  width: 23.333px;
+  position: relative;
+}
+
+.waitlist-footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.waitlist-social-buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.waitlist-social-icon {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.waitlist-social-icon:hover {
+  transform: scale(1.1);
+}
+
+.waitlist-social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.waitlist-title {
+    position: absolute;
+  top: 16%; 
+  left: 36%;
+  font-family: 'Cinzel', serif;
+  font-size: 84px;
+  font-weight: 450;
+  line-height: 1.05;
+  letter-spacing: -2.16px;
+  color: #ffe3c6;
+  text-shadow: 0px 10px 10px rgba(255, 255, 255, 0.25);
+  margin: 0;
+  white-space: pre-wrap;
+  font-variation-settings: "'YEAR' 1979";
+}
+.waitlist-subtitle {
+  font-family: "Noto Serif", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #520303;
+  text-shadow: 0px 4px 10px rgba(255, 250, 213, 0.82);
+  margin: 0;
+  white-space: pre-wrap;
+  font-variation-settings: "'CTGR' 0, 'wdth' 100";
+}
+
+.waitlist-footer-links a {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #1e1e1e;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.waitlist-footer-links a:hover {
+  color: #d9d9d9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .waitlist-hero-section {
+    height: auto;
+    gap: 24px;
+    padding: 80px 16px;
+  }
+
+  .waitlist-title {
+    font-size: 48px;
+    letter-spacing: -1.44px;
+  }
+
+  .waitlist-subtitle {
+    font-size: 18px;
+  }
+
+  .waitlist-form {
+    flex-direction: column;
+    width: 100%;
+    max-width: 338px;
+  }
+
+  .waitlist-input {
+    min-width: 100%;
+  }
+
+  .waitlist-footer {
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 16px;
+  }
+
+  .waitlist-footer-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .waitlist-header {
+    height: 120px;
+  }
+
+  .waitlist-hero-section {
+    height: auto;
+    gap: 16px;
+    padding: 60px 12px;
+  }
+
+  .waitlist-title {
+    font-size: 36px;
+  }
+
+  .waitlist-subtitle {
+    font-size: 16px;
+  }
+
+  .waitlist-form {
+    width: 100%;
+  }
+}

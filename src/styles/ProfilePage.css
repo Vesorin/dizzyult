@@ -1,0 +1,530 @@
+.profile-header-texts {
+  margin-left: 120px;
+}
+
+.profile-edit-actions {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/* Unified editable box style for profile page */
+.profile-editable-box,
+.student-bio-box textarea.biography-textarea,
+.student-name-input,
+.info-item-input {
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+  font-size: 1.15rem;
+  min-width: 440px;
+  min-height: 48px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 2.5px solid #f58545;
+  background: #fffbe8;
+  box-shadow: 0 2px 12px 0 rgba(44,34,0,0.10);
+  resize: vertical;
+  margin-bottom: 12px;
+  color: #222;
+  outline: none;
+  box-sizing: border-box;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.profile-editable-box:focus,
+.student-bio-box textarea.biography-textarea:focus,
+.student-name-input:focus,
+.info-item-input:focus {
+  border: 2.5px solid #ff6600;
+  box-shadow: 0 2px 16px 0 rgba(255,102,0,0.13);
+}
+/* Student Bio Box (styled like student-info-box) */
+.student-bio-box {
+  background: #fffbe8;
+  border: 2.5px solid #f58545;
+  border-radius: 32px;
+  box-shadow: 0 4px 30px 0 rgba(44,34,0,0.18);
+  padding: 56px 48px 40px 48px;
+  min-height: 260px;
+  font-size: 1.15rem;
+  box-sizing: border-box;
+  /* Make student name edit window match info list style */
+  .student-name-input {
+    background: #fffbe8;
+    border: 2.5px solid #f58545;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px 0 rgba(44,34,0,0.10);
+    padding: 16px 24px;
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: #7a1a1a;
+    margin-bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 32px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.student-bio-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  color: #7a1a1a;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.profile-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/dizzyultadv/images/backgroundforest.PNG');
+  background-size: cover;
+  background-position: center;
+  background-color: #fffbe8;
+}
+
+.profile-header-section {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/dizzyultadv/images/headerforest.png') center/cover no-repeat;
+  border-bottom: none;
+  z-index: 1;
+}
+
+.profile-header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: 0;
+}
+
+.profile-header-content {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  z-index: 2;
+}
+
+.profile-header-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+/* Top Header Bar */
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px var(--sds-size-space-600, 60px) 12px;
+  background: url('/dizzyultadv/images/headerforest.png') center/cover no-repeat;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: 150px;
+}
+
+.header-left { display:flex; flex-direction:column; gap:8px; }
+
+.header-profile-title { margin-top:4px; }
+
+.back-button {
+  width: 90px;
+  height: 90px;
+  background-color: #7a1a1a;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+  box-shadow: 0 4px 18px 0 rgba(44,34,0,0.18);
+}
+
+.back-button:hover {
+  background-color: #410505;
+  transform: scale(1.08);
+}
+
+.back-button:active {
+  transform: scale(0.95);
+}
+
+.back-icon {
+  color: #fffbe8;
+  font-size: 40px;
+  line-height: 1;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.header-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.logout-button {
+  margin-left: auto;
+  background-color: #8b0000;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.logout-button:hover { background-color: red; transform: translateY(-1px); }
+
+.user-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fffbe8;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.user-role {
+  font-size: 18px;
+  color: #fffbe8;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Main Content */
+.profile-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 60px 0;
+}
+
+/* Profile Title Banner */
+.profile-title-banner {
+  background-color: #feffe5; /* pale yellow like achievements */
+  padding: var(--sds-size-space-600, 60px);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 2px solid #bff900;
+  box-shadow: 0px 4px 30px rgba(44,34,0,0.7);
+}
+
+.profile-title {
+  font-family: 'Cinzel', serif;
+  font-size: 3.5rem;
+  color: #fff9c4;
+  margin-bottom: 0.2em;
+  text-align: center;
+  text-shadow: 0 2px 0 #7a4a1a, 0 0 8px #7a4a1a, 2px 0 0 #7a4a1a, -2px 0 0 #7a4a1a;
+  letter-spacing: 0.08em;
+  font-weight: bold;
+}
+
+.profile-subtitle {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.3rem;
+  color: #fffde4;
+  text-align: center;
+  margin-bottom: 1.2em;
+  font-weight: 500;
+}
+
+.header-actions { display: flex; gap: 8px; margin-left: auto; }
+
+.edit-button, .save-button {
+  background: #7a1a1a;
+  color: #fffbe8;
+  border: none;
+  border-radius: 16px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0 8px;
+  box-shadow: 0 2px 12px 0 rgba(44,34,0,0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.logout-button {
+  background: #320101;
+  color: #f5f5f5;
+  border: 1.5px solid #2c2c2c;
+  border-radius: 22px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 16px;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,0.13);
+  transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+  background: #520303;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logout-button:active {
+  transform: translateY(0);
+}
+
+.edit-button:hover, .save-button:hover {
+  background: #410505;
+  transform: translateY(-2px);
+}
+
+.student-info-box {
+  background: #fffbe8;
+  border: 2.5px solid #f58545;
+  border-radius: 32px;
+  box-shadow: 0 4px 30px 0 rgba(44,34,0,0.18);
+  padding: 48px 48px 32px 48px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 32px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.student-image-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px 0 rgba(44,34,0,0.10);
+  margin-bottom: 12px;
+}
+
+.student-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #451805;
+  font-family: 'Lemon', 'Erica One', serif;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.student-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.info-item-input {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+}
+
+.student-info-list li {
+  font-size: 1.15rem;
+  color: #222;
+  padding-left: 0;
+  position: relative;
+  margin-bottom: 0;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.student-info-list li::before {
+  content: '';
+}
+
+/* Biography Section */
+.biography-section {
+  display: flex;
+  gap: var(--sds-size-space-600, 60px);
+  align-items: flex-start;
+}
+
+.biography-content {
+  flex: 1;
+  background-color: #feffe5;
+  padding: var(--sds-size-space-600, 60px);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #bff900;
+  box-shadow: 0px 4px 30px rgba(44,34,0,0.7);
+}
+
+.biography-paragraph {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Game Card */
+.game-card {
+  width: 350px;
+  flex-shrink: 0;
+  background-color: #feffe5;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 2px solid #bff900;
+  box-shadow: 0px 4px 30px rgba(44,34,0,0.7);
+}
+
+.game-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #451805;
+  margin: 0;
+  font-family: 'Inria Serif', serif;
+}
+
+.game-screen-container {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: #000;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.game-screen-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2d5016 0%, #1a3009 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.game-screen-placeholder::before {
+  content: '🎮';
+  font-size: 40px;
+  opacity: 0.5;
+}
+
+.game-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.game-level {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.game-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .biography-section {
+    flex-direction: column;
+  }
+
+  .game-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-main {
+    padding: 20px;
+  }
+
+  .profile-title {
+    font-size: 48px;
+  }
+
+  .student-info-box {
+    flex-direction: column;
+
+  .profile-edit-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Style the name edit input like info-item-input */
+  .student-name-input {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    background: #fff;
+  }
+    align-items: center;
+    text-align: center;
+  }
+
+  .student-info-list {
+    align-items: center;
+  }
+
+  .profile-title-banner {
+    padding: 30px 20px;
+  }
+
+  .student-info-box,
+  .biography-content {
+    padding: 30px 20px;
+  }
+}
+
